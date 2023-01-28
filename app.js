@@ -2,6 +2,7 @@ const sections = document.querySelectorAll('.section');
 const sectButtons = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+const videos = document.querySelectorAll('.video');
 
 function PageTransitions(){
     for(let i =0;i<sectBtn.length; i++){
@@ -25,6 +26,11 @@ function PageTransitions(){
 
             const element = document.getElementById(id);
             element.classList.add('active');
+
+            videos.forEach((vid)=>{
+                vid.pause();
+                vid.currentTime = 0;
+            })
         }
     })
 
