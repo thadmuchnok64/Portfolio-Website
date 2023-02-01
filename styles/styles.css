@@ -374,11 +374,14 @@ a {
   text-align: center;
   display: flex;
   justify-content: center;
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
 }
 .inputBlock .inputButton:hover {
   transition: all 0.2s ease-in-out;
   background-color: var(--color-button-highlight);
+  font-size: 2rem;
 }
 
 .my-links {
@@ -404,12 +407,12 @@ a {
   align-items: center;
   font-size: 4rem;
   background-color: var(--color-primary);
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .my-links a .link-button:hover {
   color: black;
-  transition: all 0.3s ease-in-out;
-  width: 8rem;
   border-radius: 0%;
   font-size: 5rem;
   background-color: var(--color-secondary);
