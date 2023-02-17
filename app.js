@@ -43,6 +43,19 @@ function PageTransitions(){
         }
     })
 
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click',() =>{
+        let element = document.body;
+        element.classList.toggle('theme2');
+        if(element.classList.contains('theme2')){
+            const themeText = document.getElementById('toggleText');
+            themeText.classList = "fa-solid fa-sun";
+        } else{
+            const themeText = document.getElementById('toggleText');
+            themeText.classList = "fa-solid fa-moon";
+        }
+    })
+
 }
 
 PageTransitions();

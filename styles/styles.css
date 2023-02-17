@@ -12,15 +12,35 @@
   --color-secondary: #AA96BE;
   --color-tertiary: #514570;
   --color-white: #FFFFFF;
+  --color-black: #000000;
   --color-button: #46325A;
   --color-button-disabled: #271539;
   --color-button-highlight: #5c4870;
   --color-font-1: #FFFFFF;
   --color-font-2: #d0c0e0;
-  --color-link-1:#bf65ff;
+  --color-link-1:#bd8de0;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   --box-shadow-2: 5px 5px 3px 10px rgba(0, 0, 0, .5);
-  --text-shadow-1:1px 1px 3px black;
+  --text-shadow-1:1px 1px 2px rgba(0,0,0,.5);
+}
+
+.theme2 {
+  --color-primary: #855446;
+  --color-primary-window: #ffd3bf;
+  --color-frame:#352723;
+  --color-secondary: #c47e6a;
+  --color-tertiary: #f6ad7c;
+  --color-white: #000000;
+  --color-black: #ffffff;
+  --color-button:#f5bc99;
+  --color-button-disabled: #59220e;
+  --color-button-highlight: #e3a685;
+  --color-font-1: #000000;
+  --color-font-2: #b65030;
+  --color-link-1:#c73333;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-2: 5px 5px 3px 10px rgba(0, 0, 0, .5);
+  --text-shadow-1:1px 1px 3px rgba(1,1,1,.5);
 }
 
 body {
@@ -57,6 +77,29 @@ section {
   display: none;
   background-color: var(--color-primary);
   animation: leaveAnim 0.5s ease-in-out;
+}
+
+.theme-btn {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+  transition: 0.1s ease-in-out;
+  color: white;
+}
+.theme-btn i {
+  font-size: 2rem;
+}
+.theme-btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 /*
@@ -271,6 +314,7 @@ a {
   height: -moz-fit-content;
   height: fit-content;
   margin-left: 3rem;
+  color: var(--color-white);
   text-align: left;
   display: table;
 }
@@ -320,7 +364,7 @@ a {
   text-align: left;
 }
 .year h1 {
-  color: white;
+  color: var(--color-white);
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
@@ -379,7 +423,7 @@ a {
   cursor: pointer;
 }
 .my-links a .link-button:hover {
-  color: black;
+  color: var(--color-black);
   border-radius: 0%;
   font-size: 5rem;
   background-color: var(--color-secondary);
@@ -476,6 +520,7 @@ a {
   font-size: 1.5rem;
   color: white;
   transition: all 0.3s ease-in-out;
+  border-style: hidden;
   cursor: pointer;
 }
 .header-content .main-window .right-divider .text-block .inputBlock .inputButton:hover {
@@ -558,6 +603,7 @@ a {
 .timelineHeader {
   width: 80%;
   background-color: var(--color-button);
+  color: var(--color-white);
   margin-top: 3rem;
   margin-left: 3rem;
   padding: 1rem;
