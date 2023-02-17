@@ -3,8 +3,10 @@ const sectButtons = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 const videos = document.querySelectorAll('.video');
-const scrollBoxes = document.querySelectorAll('.scroll')
-const win = document.querySelectorAll('.main-window')
+const scrollBoxes = document.querySelectorAll('.scroll');
+const win = document.querySelectorAll('.main-window');
+const themeBtn = document.querySelectorAll('.theme-btn');
+
 
 function PageTransitions(){
     for(let i =0;i<sectBtn.length; i++){
@@ -43,18 +45,19 @@ function PageTransitions(){
         }
     })
 
-    const themeBtn = document.querySelector('.theme-btn');
-    themeBtn.addEventListener('click',() =>{
+    for(let i =0;i<themeBtn.length; i++){
+    themeBtn[i].addEventListener('click',() =>{
         let element = document.body;
         element.classList.toggle('theme2');
         if(element.classList.contains('theme2')){
-            const themeText = document.getElementById('toggleText');
-            themeText.classList = "fa-solid fa-sun";
+            const themeText = document.querySelectorAll(".fa-moon");
+            themeText.forEach(t => t.classList = "fa-solid fa-sun");
         } else{
-            const themeText = document.getElementById('toggleText');
-            themeText.classList = "fa-solid fa-moon";
+            const themeText = document.querySelectorAll(".fa-sun");
+            themeText.forEach(t => t.classList = "fa-solid fa-moon");
         }
     })
+}
 
 }
 

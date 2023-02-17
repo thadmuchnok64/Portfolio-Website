@@ -395,6 +395,29 @@ a {
   margin-right: 0;
 }
 
+.resume-button {
+  padding: 1rem;
+  border-radius: 20px;
+  width: 20rem;
+  height: 4rem;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: var(--color-primary);
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.3s ease-in-out;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.resume-button:hover {
+  color: var(--color-black);
+  border-radius: 10px;
+  font-size: 1.75rem;
+  background-color: var(--color-secondary);
+}
+
 .my-links {
   margin: auto;
   margin-top: 5rem;
