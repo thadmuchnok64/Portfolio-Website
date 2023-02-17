@@ -3,6 +3,8 @@ const sectButtons = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 const videos = document.querySelectorAll('.video');
+const scrollBoxes = document.querySelectorAll('.scroll')
+const win = document.querySelectorAll('.main-window')
 
 function PageTransitions(){
     for(let i =0;i<sectBtn.length; i++){
@@ -31,6 +33,13 @@ function PageTransitions(){
                 vid.pause();
                 vid.currentTime = 0;
             })
+            scrollBoxes.forEach((box)=>{
+                box.scrollTop = 0;
+            })
+            win.forEach((box)=>{
+                box.scrollTop = 0;
+            })
+            
         }
     })
 
