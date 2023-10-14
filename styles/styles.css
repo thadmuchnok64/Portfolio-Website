@@ -281,7 +281,7 @@ input, textarea {
   width: 100%;
   border-radius: 15px;
   transition: all 0.2s ease-in-out;
-  filter: grayscale(50%);
+  filter: grayscale(90%);
 }
 .scroll-window .element-container .element .element-picture img:hover {
   filter: grayscale(0);
@@ -302,6 +302,30 @@ input, textarea {
   border-radius: 15px;
 }
 .scroll-window .element-container .long .element-picture img {
+  border-radius: 15px;
+}
+.scroll-window .element-container .wide {
+  width: 41rem;
+  height: 41rem;
+  border-radius: 15px;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: var(--color-button);
+  box-shadow: var(--box-shadow-1);
+}
+@media screen and (max-width: 1020px) {
+  .scroll-window .element-container .wide {
+    width: 20rem;
+    height: 20rem;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+.scroll-window .element-container .wide .element-picture {
+  padding: 0.25rem;
+  border-radius: 15px;
+}
+.scroll-window .element-container .wide .element-picture img {
   border-radius: 15px;
 }
 
