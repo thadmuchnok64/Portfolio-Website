@@ -293,6 +293,11 @@ input, textarea{
                         filter:grayscale(0);
                     }
                 }
+                .doom{
+                    &:hover{
+                        background-image: url("img/DoomGuySmile.png");
+                    }
+                }
             }
         }
         .nopic{
@@ -561,6 +566,7 @@ a{
                     font-size: 1.25rem;
                     padding-left: 2rem;
                     text-align: left;
+                    margin-bottom: 1rem;
                 }
                 p{
                     @media screen and (max-width: 1340px) {

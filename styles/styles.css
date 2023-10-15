@@ -287,6 +287,9 @@ input, textarea {
 .scroll-window .element-container .element .element-picture img:hover {
   filter: grayscale(0);
 }
+.scroll-window .element-container .element .element-picture .doom:hover {
+  background-image: url("img/DoomGuySmile.png");
+}
 .scroll-window .element-container .nopic {
   pointer-events: all;
 }
@@ -554,6 +557,7 @@ a {
   font-size: 1.25rem;
   padding-left: 2rem;
   text-align: left;
+  margin-bottom: 1rem;
 }
 .header-content .main-window .right-divider .text-block p {
   text-align: left;
